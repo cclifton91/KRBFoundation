@@ -1,0 +1,20 @@
+---
+import Layout from "../layouts/Layout.astro"
+import Nav from "../components/Nav.astro"
+import Intro from "../components/Impact/Intro.astro"
+import Testimony from "../components/Impact/Testimony.astro"
+import Metrics from "../components/Impact/Metrics.astro"
+import Takeaways from "../components/Impact/Takeaways.astro"
+import CTA from "../components/Impact/CTA.astro"
+import Footer from "../components/Footer.astro"
+---
+
+<Layout>
+	<Nav slot="header" />
+	<Intro />
+	<Testimony />
+	<Metrics />
+	<Takeaways />
+	<CTA />
+	<Footer slot="footer" />
+</Layout>

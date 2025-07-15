@@ -1,0 +1,22 @@
+---
+import Layout from "../layouts/Layout.astro"
+import IndexNav from "../components/IndexNav.astro"
+import Hero from "../components/Index/Hero.astro"
+import Intro from "../components/Index/Intro.astro"
+import Details from "../components/Index/Details.astro"
+import Programs from "../components/Index/Programs.astro"
+import Testimonals from "../components/Index/Testimonals.astro"
+import CTA from "../components/Index/CTA.astro"
+import Footer from "../components/Footer.astro"
+---
+
+<Layout>
+	<IndexNav slot="header" />
+	<Hero />
+	<Intro />
+	<Details />
+	<Programs />
+	<Testimonals />
+	<CTA />
+	<Footer slot="footer" />
+</Layout>

@@ -1,0 +1,69 @@
+---
+import { Icon } from "astro-icon/components"
+import { Image } from "astro:assets"
+import krbLogoLight from "../assets/krb-foundation.webp"
+import krbLogoDark from "../assets/krbBlack.webp"
+import hamburger from "../assets/menu.svg"
+import darkBurger from "../assets/menuBlack.svg"
+---
+
+<div>
+	<!-- Fixed navigation bar with scroll behavior -->
+	<section
+		class="fixed top-0 w-full z-50"
+		x-data="{ mobileNavOpen: false, scrolled: false }"
+		x-init=" scrolled = window.scrollY > 20; window.addEventListener('scroll', () => { scrolled = window.scrollY > 20; }); ">
+		<nav class="relative transition-all duration-500 backdrop-blur" :class="scrolled ? 'bg-gray-900 bg-opacity-90' : 'bg-transparent'">
+			<div class="py-8 px-4 lg:px-10 flex justify-between items-center">
+				<a class="text-lg font-medium" href="index.html">
+					<Image src={krbLogoLight} alt="KRB Foundation" class="h-7 w-32" />
+				</a>
+				<div class="lg:hidden">
+					<button x-on:click="mobileNavOpen = !mobileNavOpen" class="flex items-center p-3 rounded">
+						<Image src={hamburger} alt="Open Menu" class="h-6 w-6" />
+					</button>
+				</div>
+				<ul class="hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:flex lg:w-auto lg:space-x-12">
+					<li><a class="text-white text-sm font-medium hover:text-blue-50" href="about-us">About Us</a></li>
+					<li><a class="text-white text-sm font-medium hover:text-blue-50" href="our-impact">Our Impact</a></li>
+					<li><a class="text-white text-sm font-medium hover:text-blue-50" href="programs">Programs</a></li>
+				</ul>
+				<div class="hidden lg:block">
+					<a class="inline-block mr-2 py-3 px-8 text-sm border rounded text-white hover:border-gray-400 font-medium" href="about-us">Learn More</a><a
+						class="inline-block py-3 px-8 text-sm rounded font-medium transition duration-200 bg-green-300 hover:bg-green-400"
+						href="volunteer">Get Involved</a
+					>
+				</div>
+			</div>
+		</nav>
+		<!-- Mobile menu -->
+		<div :class="{ 'block': mobileNavOpen, 'hidden': !mobileNavOpen }" class="hidden fixed top-0 left-0 bottom-0 w-5/6 max-w-sm z-50">
+			<!-- Mobile navigation overlay -->
+			<div x-on:click="mobileNavOpen = false" class="fixed inset-0 bg-gray-800 opacity-25"></div>
+			<nav class="relative flex flex-col py-6 px-6 w-full h-full bg-white border-r overflow-y-auto">
+				<div class="flex items-center mb-8">
+					<a class="mr-auto text-2xl font-medium leading-none" href="/index.html">
+						<Image src={krbLogoDark} alt="KRB Foundation" class="h-7 w-32" />
+					</a>
+					<button x-on:click="mobileNavOpen = false">
+						<Image src={darkBurger} alt="Close Menu" class="h-6 w-6" />
+					</button>
+				</div>
+				<ul>
+					<li class="mb-1"><a class="block p-4 text-sm font-medium text-gray-900 hover:bg-gray-50 rounded" href="about-us">About Us</a></li>
+					<li class="mb-1"><a class="block p-4 text-sm font-medium text-gray-900 hover:bg-gray-50 rounded" href="our-impact">Our Impact</a></li>
+					<li class="mb-1"><a class="block p-4 text-sm font-medium text-gray-900 hover:bg-gray-50 rounded" href="programs">Programs</a></li>
+				</ul>
+				<div class="mt-auto pt-6">
+					<a class="block mb-2 py-3 text-center text-sm border rounded hover:border-gray-400 font-medium" href="about-us">Learn More</a><a
+						class="block py-3 text-center text-sm bg-green-300 hover:bg-green-400 rounded font-medium transition duration-200"
+						href="volunteer">Get Involved</a
+					>
+					<p class="mt-6 mb-4 text-sm text-center text-gray-500">
+						<span>© 2025 All rights reserved.</span>
+					</p>
+				</div>
+			</nav>
+		</div>
+	</section>
+</div>

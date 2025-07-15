@@ -1,0 +1,148 @@
+---
+
+---
+
+<section class="py-20 bg-blue-50" x-data="{ slideWidth: 0, activeSlide: 0, slideCount: 3 }">
+	<div class="container px-4 mx-auto">
+		<div class="flex items-center">
+			<button
+				x-on:click.prevent="activeSlide > 0 ? (activeSlide -= 1, slideWidth -= $refs['slide' + (activeSlide + 1)].offsetWidth) : null"
+				class="hidden lg:block w-14 h-14 flex-shrink-0 rounded-full border hover:bg-gray-50">
+				<svg class="mx-auto" width="19" height="13" viewBox="0 0 19 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M9.30024 6.25122L18.2502 6.25122" stroke="#838EA4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+					<path
+						fill-rule="evenodd"
+						clip-rule="evenodd"
+						d="M9.30029 1.25024L1.36329 6.25124L9.30029 11.2522L9.30029 1.25024Z"
+						stroke="#838EA4"
+						stroke-width="1.5"
+						stroke-linecap="round"
+						stroke-linejoin="round"></path>
+				</svg>
+			</button>
+			<div class="overflow-hidden">
+				<div :style="'transform: translateX(-' + slideWidth + 'px)'" class="flex transition-transform duration-500 ease-in-out -m-5" style="transform: translateX(-0px)">
+					<div x-ref="slide1" class="flex-shrink-0 w-full p-5">
+						<div class="max-w-3xl mx-auto flex flex-wrap items-center">
+							<div class="w-full lg:w-2/5 mb-6 lg:mb-0 flex flex-wrap items-center justify-between">
+								<div>
+									<img
+										class="mb-6 h-14 w-14 rounded-full object-cover object-top"
+										src="https://images.unsplash.com/photo-1544717305-2782549b5136?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80"
+										alt=""
+									/>
+									<p class="mb-2 text-2xl font-semibold font-heading">James W.</p>
+									<p class="text-gray-500">Father of 2</p>
+								</div>
+								<div class="lg:hidden pt-4">
+									<button
+										x-on:click.prevent="activeSlide > 0 ? (activeSlide -= 1, slideWidth -= $refs['slide' + (activeSlide + 1)].offsetWidth) : null"
+										class="w-12 h-12 mr-2 rounded-full border hover:bg-gray-50">
+										<svg class="mx-auto" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M19 12L5 12" stroke="#556B7A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+											<path d="M12 19L5 12L12 5" stroke="#556B7A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+										</svg>
+									</button>
+									<button
+										x-on:click.prevent="activeSlide < slideCount - 1 ? (activeSlide += 1, slideWidth += $refs['slide' + activeSlide].offsetWidth) : activeSlide = slideCount - 1"
+										class="w-12 h-12 rounded-full border hover:bg-gray-50">
+										<svg class="mx-auto" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M5 12L19 12" stroke="#556B7A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+											<path d="M12 5L19 12L12 19" stroke="#556B7A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+										</svg>
+									</button>
+								</div>
+							</div>
+							<div class="w-full lg:w-3/5">
+								<p class="text-xl">
+									KRB Foundation isn’t just a program—it’s a second home for my kids. The mentors care deeply, and I’ve seen real change in how my son approaches school and friendships
+								</p>
+							</div>
+						</div>
+					</div>
+					<div x-ref="slide2" class="flex-shrink-0 w-full p-5">
+						<div class="max-w-3xl mx-auto flex flex-wrap items-center">
+							<div class="w-full lg:w-2/5 mb-6 lg:mb-0 flex flex-wrap items-center justify-between">
+								<div>
+									<img
+										class="mb-6 h-14 w-14 rounded-full object-cover object-top"
+										src="https://images.unsplash.com/photo-1544717297-fa95b6ee9643?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
+										alt=""
+									/>
+									<p class="mb-2 text-2xl font-semibold font-heading">Malik</p>
+									<p class="text-gray-500">Age 9</p>
+								</div>
+								<div class="lg:hidden pt-4">
+									<button
+										x-on:click.prevent="activeSlide > 0 ? (activeSlide -= 1, slideWidth -= $refs['slide' + (activeSlide + 1)].offsetWidth) : null"
+										class="w-12 h-12 mr-2 rounded-full border hover:bg-gray-50">
+										<svg class="mx-auto" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M19 12L5 12" stroke="#556B7A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+											<path d="M12 19L5 12L12 5" stroke="#556B7A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+										</svg>
+									</button>
+									<button
+										x-on:click.prevent="activeSlide < slideCount - 1 ? (activeSlide += 1, slideWidth += $refs['slide' + activeSlide].offsetWidth) : activeSlide = slideCount - 1"
+										class="w-12 h-12 rounded-full border hover:bg-gray-50">
+										<svg class="mx-auto" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M5 12L19 12" stroke="#556B7A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+											<path d="M12 5L19 12L12 19" stroke="#556B7A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+										</svg>
+									</button>
+								</div>
+							</div>
+							<div class="w-full lg:w-3/5">
+								<p class="text-xl">I used to think reading was boring, but now I can’t wait for book time during haircuts. They make it fun!</p>
+							</div>
+						</div>
+					</div>
+					<div x-ref="slide3" class="flex-shrink-0 w-full p-5">
+						<div class="max-w-3xl mx-auto flex flex-wrap items-center">
+							<div class="w-full lg:w-2/5 mb-6 lg:mb-0 flex flex-wrap items-center justify-between">
+								<div>
+									<img
+										class="mb-6 h-14 w-14 rounded-full object-cover object-top"
+										src="https://images.unsplash.com/photo-1525129498994-580709352e20?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
+										alt=""
+									/>
+									<p class="mb-2 text-2xl font-semibold font-heading">Kevin M.</p>
+									<p class="text-gray-500">Volunteer Mentor</p>
+								</div>
+								<div class="lg:hidden pt-4">
+									<button
+										x-on:click.prevent="activeSlide > 0 ? (activeSlide -= 1, slideWidth -= $refs['slide' + (activeSlide + 1)].offsetWidth) : null"
+										class="w-12 h-12 mr-2 rounded-full border hover:bg-gray-50">
+										<svg class="mx-auto" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M19 12L5 12" stroke="#556B7A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+											<path d="M12 19L5 12L12 5" stroke="#556B7A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+										</svg>
+									</button>
+									<button
+										x-on:click.prevent="activeSlide < slideCount - 1 ? (activeSlide += 1, slideWidth += $refs['slide' + activeSlide].offsetWidth) : activeSlide = slideCount - 1"
+										class="w-12 h-12 rounded-full border hover:bg-gray-50">
+										<svg class="mx-auto" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M5 12L19 12" stroke="#556B7A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+											<path d="M12 5L19 12L12 19" stroke="#556B7A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+										</svg>
+									</button>
+								</div>
+							</div>
+							<div class="w-full lg:w-3/5">
+								<p class="text-xl">Volunteering with KRB Foundation has been one of the most rewarding things I’ve ever done. Watching these kids grow and believe in themselves is powerful.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<button
+				x-on:click.prevent="activeSlide < slideCount - 1 ? (activeSlide += 1, slideWidth += $refs['slide' + activeSlide].offsetWidth) : activeSlide = slideCount - 1"
+				class="hidden lg:block w-14 h-14 flex-shrink-0 rounded-full border hover:bg-gray-50">
+				<svg class="mx-auto" width="19" height="13" viewBox="0 0 19 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M9.69976 6.74878L0.749756 6.74878" stroke="#838EA4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+					<path fill-rule="evenodd" clip-rule="evenodd" d="M9.69971 11.7498L17.6367 6.74876L9.69971 1.74776V11.7498Z" stroke="#838EA4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+					></path>
+				</svg>
+			</button>
+		</div>
+	</div>
+</section>

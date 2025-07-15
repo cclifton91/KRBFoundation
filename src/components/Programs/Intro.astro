@@ -1,0 +1,30 @@
+---
+import { Image } from "astro:assets"
+import yellowEclipse from "../../assets/yellow-eclipse.svg"
+import blueTriangle from "../../assets/blue-triangle.svg"
+import pinkCircle from "../../assets/pink-circle.svg"
+---
+
+<section class="relative py-20 overflow-hidden">
+	<div class="hidden lg:block absolute bottom-0 left-0">
+		<Image class="ml-72 -mb-20" src={pinkCircle} alt="pink circle" />
+		<Image class="transform rotate-180" src={yellowEclipse} alt="yellow eclipse" />
+		<Image class="w-72 absolute bottom-0 right-0" src={blueTriangle} alt="blue triangle" />
+	</div>
+	<div class="container px-4 mx-auto">
+		<div class="relative flex flex-wrap items-center -mx-4">
+			<div class="w-full lg:w-1/2 px-4">
+				<img class="rounded-xl" src="https://static.shuffle.dev/uploads/files/0a/0ad70c7e2fdbee1678796ff2a9852d175c7afd73/getty-images-pXHlA1cg1IU-unsplash.jpg" alt="" />
+			</div>
+			<div class="relative w-full lg:w-1/2 px-4 order-first lg:order-last">
+				<div class="relative lg:pl-10 max-w-lg mb-10 lg:mb-0">
+					<h2 class="mt-8 mb-6 lg:mb-10 lg:pr-8 text-4xl font-semibold font-heading">KRB Foundation Programs</h2>
+					<p class="mb-6 lg:mb-12 text-xl text-gray-500">
+						At KRB Foundation, we offer a diverse range of programs designed to educate, inspire, and empower youth before and after school. Each initiative provides hands-on learning, character
+						development, and a safe, supportive environment for personal growth.
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

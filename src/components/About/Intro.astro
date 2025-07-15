@@ -1,0 +1,35 @@
+---
+import { Image } from "astro:assets"
+import yellowEclipse from "../../assets/yellow-eclipse.svg"
+import blueTriangle from "../../assets/blue-triangle.svg"
+import pinkCircle from "../../assets/pink-circle.svg"
+---
+
+<section class="relative py-20 overflow-hidden">
+	<div class="hidden lg:block absolute bottom-0 right-0">
+		<Image src={blueTriangle} class="w-72 absolute inset-y-0 left-0 -ml-72" alt="blue triangle" />
+		<Image class="mr-40 -mb-40" src={pinkCircle} alt="pink circle" />
+		<Image class="ml-auto" src={yellowEclipse} alt="yellow eclipse" />
+	</div>
+	<div class="relative container px-4 mx-auto">
+		<div class="relative flex flex-wrap items-center -mx-4">
+			<div class="w-full lg:w-1/2 px-4 mb-12 lg:mb-0">
+				<div class="max-w-lg">
+					<h2 class="mt-8 mb-6 lg:mb-10 lg:pr-8 text-4xl font-semibold font-heading">Our Journey and Commitment</h2>
+					<p class="mb-6 lg:mb-12 text-xl text-gray-500">
+						Since our founding in 2010, KRB Foundation has been committed to empowering youth and families in underserved communities through education, enrichment, and mentorship. Our mission is to
+						provide safe, supportive, and engaging spaces—both before and after school—where young people can learn, grow, and thrive. Through hands-on programs in literacy, STEAM, life skills, and
+						community connection, we’re helping shape confident, capable leaders for tomorrow.
+					</p>
+				</div>
+			</div>
+			<div class="w-full lg:w-1/2 px-4">
+				<img
+					class="rounded-xl lg:max-w-2xl"
+					src="https://images.unsplash.com/photo-1529390079861-591de354faf5?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzIzMzB8MHwxfHNlYXJjaHwzN3x8YmxhY2slMjB0ZWFjaGVyc3xlbnwwfHx8fDE3NDc3ODg3MjF8MA&ixlib=rb-4.1.0&q=85&w=1920"
+					alt=""
+				/>
+			</div>
+		</div>
+	</div>
+</section>

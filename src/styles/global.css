@@ -1,0 +1,6 @@
+@import "tailwindcss";
+
+@theme {
+  --font-heading: Caveat Brush, cursive;
+  --font-body: Nunito, sans-serif;
+}

@@ -1,0 +1,16 @@
+---
+import Layout from "../layouts/Layout.astro"
+import Nav from "../components/Nav.astro"
+import Intro from "../components/Programs/Intro.astro"
+import Footer from "../components/Footer.astro"
+import ListPrograms from "../components/Programs/ListPrograms.astro"
+import CTA from "../components/Programs/CTA.astro"
+---
+
+<Layout>
+	<Nav slot="header" />
+	<Intro />
+	<ListPrograms />
+	<CTA />
+	<Footer slot="footer" />
+</Layout>

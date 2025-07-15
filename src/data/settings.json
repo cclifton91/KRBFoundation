@@ -1,0 +1,25 @@
+{
+  "name": "Ken Brown",
+  "email": "kenbrown@krbfoundation.com",
+  "phone": "1234567890",
+  "address": "1234 Main St, City, State, 12345",
+  "title": "KRB Foundation",
+  "description": "KRB Foundation is committed to creating lasting change by investing in youth through impactful initiatives in education, wellness, and personal development.",
+  "url": "https://krbfoundation.com",
+  "keywords": "KRB Foundation, youth empowerment, education, wellness, personal development",
+  "ogImage": "../public/ogimage.jpg",
+  "thirdPartyScripts": "",
+  "googleAnalytics": {
+    "trackingId": "UA-123456789-1",
+    "anonymizeIp": true
+  },
+  "facebookPixel": {
+    "pixelId": "123456789012345"
+  },
+  "twitterPixel": {
+    "pixelId": "123456789012345"
+  },
+  "linkedinInsightTag": {
+    "partnerId": "1234567890"
+  }
+}

@@ -4,13 +4,15 @@ import krbLogoLight from "../assets/krb-foundation.webp"
 import hamburger from "../assets/menu.svg"
 import darkBurger from "../assets/menuBlack.svg"
 import krbLogoDark from "../assets/krbBlack.webp"
+import logo2 from "../assets/logo2.png"
+import logo2dark from "../assets/logo2dark.png"
 ---
 
 <section class="py-8 px-4 lg:px-10 bg-gray-900" x-data="{ mobileNavOpen: false }">
 	<nav class="relative">
 		<div class="flex justify-between items-center">
 			<a class="text-lg font-medium" href="/">
-				<Image src={krbLogoLight} alt="KRB Foundation Logo" class="w-auto h-7" />
+				<Image src={logo2} alt="KRB Foundation Logo" class="w-auto h-16" />
 			</a>
 			<div class="lg:hidden">
 				<button x-on:click="mobileNavOpen = !mobileNavOpen" class="flex items-center p-3 ounded">
@@ -36,7 +38,7 @@ import krbLogoDark from "../assets/krbBlack.webp"
 		<nav class="relative flex flex-col py-6 px-6 w-full h-full bg-white border-r overflow-y-auto">
 			<div class="flex items-center mb-8">
 				<a class="mr-auto text-2xl font-medium leading-none" href="/">
-					<Image src={krbLogoDark} alt="KRB Foundation Logo" class="h-7 w-auto" />
+					<Image src={logo2dark} alt="KRB Foundation Logo" class="h-16 w-auto" />
 				</a>
 				<button x-on:click="mobileNavOpen = !mobileNavOpen">
 					<Image src={darkBurger} alt="Close Menu" class="h-6 w-6" />

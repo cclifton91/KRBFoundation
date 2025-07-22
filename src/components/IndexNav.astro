@@ -3,6 +3,8 @@ import { Icon } from "astro-icon/components"
 import { Image } from "astro:assets"
 import krbLogoLight from "../assets/krb-foundation.webp"
 import krbLogoDark from "../assets/krbBlack.webp"
+import logo2 from "../assets/logo2.png"
+import logo2dark from "../assets/logo2dark.png"
 import hamburger from "../assets/menu.svg"
 import darkBurger from "../assets/menuBlack.svg"
 ---
@@ -16,7 +18,7 @@ import darkBurger from "../assets/menuBlack.svg"
 		<nav class="relative transition-all duration-500 backdrop-blur" :class="scrolled ? 'bg-gray-900 bg-opacity-90' : 'bg-transparent'">
 			<div class="py-8 px-4 lg:px-10 flex justify-between items-center">
 				<a class="text-lg font-medium" href="index.html">
-					<Image src={krbLogoLight} alt="KRB Foundation" class="h-7 w-32" />
+					<Image src={logo2} alt="KRB Foundation" class="h-16 w-auto" />
 				</a>
 				<div class="lg:hidden">
 					<button x-on:click="mobileNavOpen = !mobileNavOpen" class="flex items-center p-3 rounded">
@@ -43,7 +45,7 @@ import darkBurger from "../assets/menuBlack.svg"
 			<nav class="relative flex flex-col py-6 px-6 w-full h-full bg-white border-r overflow-y-auto">
 				<div class="flex items-center mb-8">
 					<a class="mr-auto text-2xl font-medium leading-none" href="/index.html">
-						<Image src={krbLogoDark} alt="KRB Foundation" class="h-7 w-32" />
+						<Image src={logo2dark} alt="KRB Foundation" class="h-16 w-auto" />
 					</a>
 					<button x-on:click="mobileNavOpen = false">
 						<Image src={darkBurger} alt="Close Menu" class="h-6 w-6" />

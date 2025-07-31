@@ -26,5 +26,14 @@ content:
       - { name: "instagram", label: "Instagram", type: "string",}
       - { name: "linkedin", label: "LinkedIn", type: "string",}
       - { name: "youtube", label: "Youtube", type: "string",}  
-
-    
+  - name: "team"
+    label: "Team Members"
+    type: "file"
+    path: "src/data/team.json"
+    fields:
+      - { name: "id", label: "ID", type: "string", required: true }
+      - { name: "name", label: "Name", type: "string", required: true }
+      - { name: "role", label: "Role", type: "string", required: true }
+      - { name: "image", label: "Image", type: "image", required: true }
+      - { name: "imageAlt", label: "Image Alt Text", type: "string", required: true }
+      - { name: "description", label: "Description", type: "string", required: true }

@@ -3,32 +3,32 @@
     "id": "1",
     "name": "Ken Brown",
     "role": "Chief Executive Officer / President",
-    "image": "", 
-    "imageAlt": "Sarah Johnson",
-    "description":""
+    "image": "../../media/kenbrown.png", 
+    "imageAlt": "Ken Brown",
+    "description": "Ken Brown is a devoted real estate developer with over 30 years of experience in the real estate and financing industries. As a child of the South Side of Chicago, Ken grew up witnessing the impact of systemic injustices, particularly the effects of redlining and the absence of quality housing in Black communities. These experiences deeply shaped his faith-driven mission to uplift and empower under-resourced neighborhoods, particularly within the African American community. He believes that housing is not only a necessity but a key to transforming lives, and he is committed to ensuring that every individual, regardless of background or economic status, has access to a safe, affordable home."
   },
   {
     "id": "2",
     "name": "Dr. Zolisha L Ware",
     "role": "Vice President of Operations",
-    "image": "", 
-    "imageAlt": "Sarah Johnson",
-    "description":""
+    "image": "../../media/zolisha.jpeg", 
+    "imageAlt": "Dr. Zolisha L Ware",
+    "description": "Dr. Zolisha L. Ware stands as a dynamic and inspiring figure in the realms of education, leadership, and business. With an impressive academic background, Dr. Ware holds a doctorate in Leadership, bolstered by dual master's degrees in Business Management and Executive Leadership. Her educational achievements are seamlessly intertwined with her unwavering dedication to cultivating young talent and shaping the leaders of tomorrow.|Dr. Ware's extensive experience working as a tenure-track professor with college students from eager freshmen to poised seniors has established her as an exceptional mentor. Her genuine passion for guiding aspiring entrepreneurs has made her a vital resource for those aiming to make a significant impact in the business world. Her mentoring approach, deeply rooted in practical insights and empathetic guidance, empowers students to navigate challenges and seize opportunities with confidence.|Beyond her academic and mentoring roles, Dr. Ware brings a wealth of practical experience from her decade-long tenure at a Fortune 500 company. In her role as a liaison, she skillfully acted as a bridge between various departments, fostering communication and collaboration that drove impactful results. Her ability to navigate complex organizational structures has endowed her with a unique perspective on business dynamics, enabling her to impart invaluable knowledge to her protégés.|Through her harmonious blend of academic expertise, hands-on experience, and an unyielding commitment to nurturing the next generation of leaders, Dr. Zolisha L. Ware continues to be a revered force in education and business, inspiring countless individuals to pursue excellence and innovation in their respective fields."
   },
   {
     "id": "3",
     "name": "Eric Howard",
     "role": "Community Impact Coordinator",
-    "image": "", 
+    "image": "../../media/erichoward.jpg", 
     "imageAlt": "Eric Howard",
-    "description":""
+    "description": "Eric Howard is a dedicated barber and youth mentor based in Bloomington-Normal, Illinois, known not only for his precision and artistry with clippers but also for his unwavering passion for uplifting the next generation. A native of Chicago, Eric grew up in a community where positive role models made all the difference—and he carries that same spirit of support and leadership into everything he does.|Understanding that the barbershop has always been more than just a place for haircuts—it's a cornerstone of culture, conversation, and connection—Eric launched an innovative initiative that encourages kids to read during their visits. By integrating literacy into an everyday experience, he creates a relaxed, judgment-free space where children build confidence, improve reading skills, and engage in meaningful dialogue. His chair has become a classroom, a safe haven, and a hub for encouragement|Beyond the clippers, Eric sees his role as a mentor, motivator, and community builder. He collaborates with local organizations, participates in outreach events, and actively seeks ways to make learning and leadership accessible to youth of all backgrounds. With a heart for service and a genuine commitment to transformation, Eric continues to change lives—one book, one conversation, and one haircut at a time."
   },
   {
     "id": "4",
-    "name": "Dr. Lynette D Adams",
+    "name": "Dr. Lynette D. Adams",
     "role": "Director of Learning and Development",
-    "image": "", 
-    "imageAlt": "Dr. Lynette D Adams",
-    "description":""
+    "image": "../../media/drlynetteDadams.jpg", 
+    "imageAlt": "Dr. Lynette D. Adams",
+    "description": "Dr. Lynette D. Adams, PhD, is an independent business consultant for LSeven Enterprises, LLC. Her diverse professional experience spans local and federal government, as well as private industry. This is experience is from the legal field, education, human resources, employment services, logistics management, social services, business management, and mental health services.|Born and raised in Chicago, Illinois, Dr. Adams received her secondary education from Wilberforce University, University of Dayton, and Capella University. She is a proud mother of three and grandmother of three grandsons.|In her personal time, Dr. Adams enjoys spending quality time with family and friends, pursuing creative hobbies like sewing and crafting, and engaging in minor carpentry work. She is also passionate about community service, particularly for youth and seniors, and is actively involved in political activism. Traveling and enjoying a nice cigar on a beach is another one of her favorite pastimes.|Mantra: \"To God be the glory, therefore, serve mankind to show your gratitude for God's graces and mercy.\""
   }
 ]

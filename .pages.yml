@@ -26,13 +26,5 @@ content:
       - { name: "instagram", label: "Instagram", type: "string",}
       - { name: "linkedin", label: "LinkedIn", type: "string",}
       - { name: "youtube", label: "Youtube", type: "string",}  
-  - name: "Home Page"
-    label: "Home Page Settings" 
-    path: "src/layouts/Layout.astro"
-    type: "file"
-    fields:
-    - { name: "heading", label: "Hero Heading", type: "text",}
-    - { name: "description", label: "Hero Description", type: "text",}
-    - { name: "aboutText", label: "About Description", type: "text",}
 
     

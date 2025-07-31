@@ -36,7 +36,7 @@ const { facebook = social.facebook, twitter = social.twitter, instagram = social
 					</div>
 				</div>
 			</div>
-			<div
+			<!--<div
 				class="w-full lg:w-2/5 px-4 order-first lg:order-last mb-10 lg:mb-0"
 				x-data="{ 
 				showThankYou: false, 
@@ -71,7 +71,7 @@ const { facebook = social.facebook, twitter = social.twitter, instagram = social
 				<h3 class="mb-6 text-base font-medium">Subscribe to Our Newsletter</h3>
 				<p class="mb-12 text-sm text-gray-500">Stay up-to-date with the latest news, events, and impact stories from KRB Foundation.</p>
 
-				<!-- Newsletter Form -->
+				
 				<form name="newsletter" method="POST" data-netlify="true" netlify-honeypot="bot-field" @submit.prevent="submitForm()" x-show="!showThankYou">
 					<input type="hidden" name="form-name" value="newsletter" />
 					<p class="hidden">
@@ -110,7 +110,7 @@ const { facebook = social.facebook, twitter = social.twitter, instagram = social
 					</div>
 				</form>
 
-				<!-- Thank You Message -->
+				
 				<div x-show="showThankYou" x-transition.opacity.duration.500ms class="text-center">
 					<div class="bg-green-50 border border-green-200 rounded-lg p-6">
 						<div class="flex justify-center mb-4">
@@ -125,7 +125,7 @@ const { facebook = social.facebook, twitter = social.twitter, instagram = social
 						<button @click="showThankYou = false" class="text-sm text-green-600 hover:text-green-800 font-medium underline transition-colors duration-200"> Subscribe Another Email </button>
 					</div>
 				</div>
-			</div>
+			</div> -->
 		</div>
 		<div class="flex flex-wrap items-center pt-10">
 			<div class="w-full lg:w-1/2">

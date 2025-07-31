@@ -7,11 +7,11 @@ content:
     type: "file"
     path: "src/data/settings.json"
     fields:
-      - { name: "name", label: "Business Name", type: "string", required: true }
+      - { name: "name", label: "Name", type: "string", required: true }
       - { name: "email", label: "Email Address", type: "string", required: true }
       - { name: "phone", label: "Phone Number", type: "string", required: true }
       - { name: "address", label: "Address", type: "string", required: true }
-      - { name: "title", label: "Title of Wwebsite", type: "string", required: true }
+      - { name: "title", label: "Title of Website", type: "string", required: true }
       - { name: "description", label: "Description of Website", type: "string", required: true }
       - { name: "url", label: "URL", type: "string", required: true }
       - { name: "keywords", label: "Keywords", type: "string",}
